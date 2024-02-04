@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Valentine</title>
+</head>
+<body>
+    <div class="answer" id="answer">
+        <img src="https://blog.aweber.com/wp-content/uploads/2022/02/Valentines-Day-GIFs-5.gif" alt="Valentine">
+        <p>Will you be my Valentine?</p>
+        <div class="buttons">
+            <button id="button1">Yes</button>
+            <button id="button2">No</button>
+        </div>
+    </div>
+    <div class="yes" id="yes">
+        <img src="https://gifsec.com/wp-content/uploads/2022/09/i-love-you-gif-1.gif" alt="i love you">
+    </div>
+    <script>
+        var button1 = document.getElementById("button1");
+        var button2 = document.getElementById("button2");
+        var window1 = document.getElementById("answer");
+        var window2 = document.getElementById("yes");
+
+        button2.addEventListener("click", function() {
+            var currentSize = parseInt(window.getComputedStyle(button1).fontSize);
+            var newSize = currentSize * 1.5;
+            button1.style.fontSize = newSize + "px";
+        });
+        button1.addEventListener("click", function() {
+            window1.style.visibility = "hidden";
+            window2.style.visibility = "visible";
+        });
+    </script>
+</body>
+</html>

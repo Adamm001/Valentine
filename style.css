@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    min-height: 100vh;
+    background-color: #fdb3b5;
+    position: relative;
+}
+.answer{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.answer img{
+    max-width: 100%;
+    min-width: 300px;
+}
+p{
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+#button1, #button2{
+    border: none;
+    background-color: #c20030;
+    color: white;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+}
+#button1{
+    min-height: 40px;
+    min-width: 80px;
+    padding: 10px;
+}
+#button2{
+    height: 40px;
+    width: 80px;
+}
+.yes{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.yes img{
+    width: 100%;
+}
